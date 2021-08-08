@@ -30,6 +30,11 @@ public class SquadTest {
         Squad squad=setupNewSquad();
         assertEquals("X team",squad.getName());
     }
+    @Test
+    public void SuperSquadInstantiatesWithFightingCause_true() throws  Exception {
+        Squad squad=setupNewSquad();
+        assertEquals("hunger",squad.getFightingCause());
+    }
 
     //helper methods
     public Squad setupNewSquad(){
