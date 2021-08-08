@@ -20,6 +20,12 @@ public class SquadTest {
         Squad squad=setupNewSquad();
         assertEquals(true,squad instanceof Squad );
     }
+    @Test
+    public void SuperHeroInstantiatesWithMaxSize_true() throws  Exception {
+        Squad squad=setupNewSquad();
+        assertEquals(3,squad.getMaxSize());
+    }
+
 
     //helper methods
     public Squad setupNewSquad(){
