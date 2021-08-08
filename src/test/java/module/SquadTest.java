@@ -21,11 +21,15 @@ public class SquadTest {
         assertEquals(true,squad instanceof Squad );
     }
     @Test
-    public void SuperHeroInstantiatesWithMaxSize_true() throws  Exception {
+    public void SuperSquadInstantiatesWithMaxSize_true() throws  Exception {
         Squad squad=setupNewSquad();
         assertEquals(3,squad.getMaxSize());
     }
-
+    @Test
+    public void SuperSquadInstantiatesWithName_true() throws  Exception {
+        Squad squad=setupNewSquad();
+        assertEquals("X team",squad.getName());
+    }
 
     //helper methods
     public Squad setupNewSquad(){
