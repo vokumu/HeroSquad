@@ -1,6 +1,7 @@
 package module;
 
 public class Squad {
+    private int id;
     private int maxSize;
     private String name;
     private String fightingCause;
@@ -11,4 +12,20 @@ public class Squad {
         this.fightingCause=fightingCause;
 
     }
+    //set methods
+    public void setId(int id) {
+        this.id = id;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setMaxSize(int maxSize){
+        this.maxSize=maxSize;
+    }
+    public void setFightingCause(String fightingCause){
+        this.fightingCause=fightingCause;
+    }
+
+
+
 }

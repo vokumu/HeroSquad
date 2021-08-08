@@ -20,7 +20,7 @@ public class Hero {
     public void setName(String name) {
         this.name = name;
     }
-    public void age(int age){
+    public void setAge(int age){
         this.age=age;
     }
     public void setSpecialPowers(String specialPowers){
