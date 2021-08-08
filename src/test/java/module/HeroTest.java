@@ -20,6 +20,11 @@ public class HeroTest {
         Hero hero=setupNewSuperHero();
         assertEquals(true,hero instanceof Hero );
     }
+    @Test
+    public void SuperHeroInstantiatesWithName_true() throws  Exception {
+        Hero hero=setupNewSuperHero();
+        assertEquals("Vicky",hero.getName());
+    }
     //helper methods
     public Hero setupNewSuperHero(){
         return new Hero("Vicky",23,"speed","rice");
