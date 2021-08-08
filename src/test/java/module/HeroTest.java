@@ -31,8 +31,14 @@ public class HeroTest {
         assertEquals(23,hero.getAge());
 
     }
+    @Test
+    public void SuperHeroInstantiatesWithSpecialPowers_true() throws Exception {
+        Hero hero=setupNewSuperHero();
+        assertEquals("speed",hero.getSpecialPowers());
+    }
     //helper methods
     public Hero setupNewSuperHero(){
         return new Hero("Vicky",23,"speed","rice");
     }
+
 }
