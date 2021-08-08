@@ -26,6 +26,15 @@ public class Squad {
         this.fightingCause=fightingCause;
     }
 
+    //get methods
+    public int getId() {
+        return id;
+    }
+    public String getName() {
+        return name;
+    }
+    public int getMaxSize() { return maxSize;}
+    public String getFightingCause(){ return fightingCause;}
 
 
 }
